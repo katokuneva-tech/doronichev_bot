@@ -1,0 +1,1687 @@
+if it weren't for today's guest you
+wouldn't have YouTube on your phone at
+least it's fair to say you wouldn't have
+had YouTube on your phone way back in
+the late
+2000s Andre doronichev or Andre doy as
+he's called made a Big Splash in Silicon
+Valley back then when he led the team
+that took YouTube mobile we have him to
+thank for what's at once become what I
+call the most valuable tool in the shed
+when you're trying to troubleshoot a
+malfunctioning washing machine and a
+guilty pleasure of mindless YouTube
+shorts Andre stayed on with YouTube
+after the Google acquisition as head of
+YouTube mobile and director of product
+management he left the company in 2021
+to try his hand at entrepreneurship
+leveraging Ai and image recognition
+Technologies as his business mediums so
+what's a Silicon Valley Superstar have
+to do with the business of Biotech you
+might ask well Andre's latest Venture a
+startup called bioptic sits squarely at
+the intersection of AI and biotech and
+if he has his way it'll create
+opportunity for biotech Builders like
+you now I know what you might be
+thinking just about everyone launching a
+new biotech these days claims to sit in
+the middle of that intersection well if
+it were anyone other than Andre doy I'd
+probably pause before inviting them on
+the show but this guy's really done some
+stuff and now he wants to do some of
+that stuff in biotech so the juice in
+this episode should be worth the squeeze
+I've also asked my friend and colleague
+Ben comr Chief editor over at life
+science leader to hang out with Andre
+and I today so I'm excited about that
+and I suspect you'll be continuing to
+hear and see more from Ben in the coming
+weeks Andre and thanks Matt it's great
+to have you guys on the show great to be
+together with you guys thanks Matt um
+after your introduction I really want to
+meet this Andre guy sounds like an
+awesome
+person well we're gonna you're gonna
+meet him today and so is our audience
+uh and I want to start I want to start
+with this uh this departure from from
+Google um you know before you even
+started getting into the biotech space
+uh what was it that kind of prompted you
+to move away from Google and start
+founding these Tech startups why'd you
+leave and what have you been doing sense
+sure um well first of all before I
+joined Google I actually had a couple of
+startups so I joined Google in 2007 uh
+after selling my previous company um and
+uh it was a crazy amazing time to be in
+Tech um and I was extremely lucky um to
+not only be in the Forefront of back
+then emerging um mobile internet but
+also I had a chance to launch something
+thing that lasted that made sense um um
+even and that makes sense even now is
+the most useful tool in the shed as you
+refer to it um so this app that we
+started with just a couple of Engineers
+um and you know then we negotiated
+agreed with Google to fund it and we
+launched the first the the Nokia version
+and then the Android version and then
+eventually like I had a privilege to
+negotiate with Phil Schiller of uh Apple
+to Launch uh in the App Store um that
+one little app went from zero users to a
+billion users and was an incredible once
+in a lifetime opportunity to be part of
+that team um but that said um I had an
+amazing run for 13 years uh and uh very
+frankly I just felt like we kind of
+solved a lot of big problems in Tech uh
+and at some point I found myself sort of
+not being bored but feeling like we are
+sort of inventing new problems to solve
+because their actual user pains U for
+information access were like solved at
+large and at least in the domain I I I
+applied my knowledge to um and uh yeah
+it was a good time to move on and see
+what else is there um what other things
+I can contribute uh to to this world um
+and I spent some time reflecting and you
+know and just taking a break after I
+left Google um and then um you know I
+became clear to me that first of all it
+is really hard not to do something even
+if you can uh and second is that there
+was happening another Revolution um
+intact that was machine learning uh and
+that something big was about to happen
+and then I really wanted to be at the
+Forefront of uh of this new uh wave of
+Technology um so I started uh a company
+like a little private um research AI
+research team with not very clear
+mandate you know a thesis was well we
+probably going to build on our strength
+like my co-founder uh co-founders had
+years of research experience in in high
+throughput information retrieval systems
+something similar to YouTube's screening
+technology that screens every video when
+you upload it and it makes a decision
+whether it's a video about cats or it's
+you know some violence or some
+inappropriate material or whatever
+essentially A system that watches quote
+unquote every video of billions of
+videos uploaded and then very quickly um
+uh decides what to do with it so that's
+the content ID screening platform as
+YouTube called it and so we we had
+expertise in those kind kind of high
+throughput screening Technologies and
+and we thought that there might be other
+um uh verticals where this technology
+might be applicable so we assembled the
+team we raised some capital from
+outstanding investors Kleiner Perkins
+was our lead and grey lock uh
+participated in the round and many
+others um so with this team we we
+started just exploring different
+hypothesis uh and uh here we are turns
+out that screening technology using AI
+is extremely useful uh for Bio so that's
+how you know eventually we turned into
+Tech bi a company Andre um obviously a
+number of big pharmaceutical companies
+have used High throughput screening a as
+a development tool using a compound
+library was was that the real connection
+that that you found to biotech I mean
+you could have gone into a number of of
+different fields you you chose bio was
+was it was there some other reason that
+you were interested in BIO and and human
+health or was was high throughput
+screening and the kind of um
+adaptability between those Industries a
+key aspect of
+it the honest answer and I guess I I'll
+be giving honest answers today the
+honest answerers answer is it's both
+like one my personal interest um and you
+know I I'm over 40 now when I was 30 I
+really cared about entertainment uh and
+content and games and videos and it was
+super fun fun and I lived by this Mantra
+that Silicon Valley lived by which was
+move fast and break things uh and it
+felt very natural and for those 13 years
+at Google it felt very natural to me um
+and then like by the time I left Google
+I realized that I'm passionate about
+other things now and uh one thing I
+found myself really interested in was
+Health uh and you know how I said like
+we ran out of pains to solve in tech
+industry well in health there are
+literal pains for billions of people out
+there that need solution and so as a as
+a reflection of things that became more
+important to me at this stage of my life
+this uh um entrance into bio uh field
+feels natural but also the honest answer
+is there was a bit of L luck uh and what
+happened was as we built our screening
+technology and we were you know using it
+for all sorts of use cases from
+assessing digital art uh and detecting
+fraudulent artworks um to helping Banks
+and financial institutions to detect um
+AI generating generated driving licenses
+uh when they're being uploaded during
+like know your customer kyc flow right
+so all sorts of things can be solved if
+you have ai that can literally screen
+billions of items in in minutes or hours
+um and so we've been approaching
+different Industries and and and testing
+our solution in different places and so
+I went to uh to a conference to Ted in
+Vancouver a couple of years ago and as I
+was participating and chatting with
+people uh you know across different
+Industries and Academia who participated
+in the conference I met this professor
+Dr AR chasov who is a professor of drug
+Discovery spent his life uh working on
+small molecules and peptides um he is
+currently a a tenure professor at the
+UBC and so as we were chatting I
+described what we have and yes this is
+where um this connection to hyrus
+screening uh uh came to be because he
+explained to me that hey actually like
+we're having really hard times now that
+molecular
+libraries um became so big like orders
+of magnitude bigger he told me I think
+he told me hey back when we were
+screening this program he was telling me
+about we had to screen 2 million
+compounds um and at this point there are
+libraries of like 40 billion compounds
+that are synthesizable I have no idea
+how to screen that what we're going to
+do but probably there's a lot of great
+molecules out there so we need new
+technologies that would be way faster
+that would um speed up discovery of
+active compounds among those libraries
+and so that was how we decided to try
+applying our tech for this
+problem that's uh it strikes me as as I
+mean yeah there's luck involved like you
+said but it also strikes me as
+courageous I mean it's it it takes
+courage to Pivot from one industry into
+any industry I think it takes a special
+kind of courage to Pivot from an
+industry into biotech I mean it it's a
+that's a pretty significant pivot what
+what were you I mean this is sort of a a
+fuzzy fuzzy question Andre but what were
+what were you feeling at the time was it
+was it just straight confidence in the
+technology and its application in this
+setting or was there any trepidation at
+all like hey you know bio that's that's
+science science is a little bit
+different from bits and bites and feeds
+and
+speeds yeah to this day I'm questioning
+My Life
+[Laughter]
+Choices uh no it was really scary and it
+still is I mean the complexity of
+biology is like nothing I've ever seen
+in my life and I worked in so and I
+thought I worked in so much complexity
+in big tag so I have enormous respect to
+to scientists and life science Industry
+and I do believe that um there's a
+reason why so many Industries already
+have been disrupted by U by Tech uh but
+I think Tech bio is we're just
+scratching the surface just the
+beginning um because it just it's so
+complex that we needed so much
+pre-existing technology to make it
+possible to even approach this field
+that said to answer your question I have
+a I have a story when I came back from
+this Ted I I really I I was intrigued by
+the idea of applying our tech for drug
+Discovery and it sounded really cool you
+know the professor Dr chasov was working
+on a prostate cancer drug I was like oh
+we can you know we can use a I to uh to
+treat cancer isn't it great like it
+sounds fantastic right but truth is I
+didn't really take this uh opportunity
+seriously at first I thought it was way
+too far and way too
+hard and at some point um Mid last year
+um I was presenting to one of our
+investors to our partner at Greylock and
+there were there were three parts of the
+presentation uh three hypothesis we went
+after with our technology and first two
+made a lot of sense and I I mentioned
+them to you like the uh the art
+detection um use case the um and we had
+like revenue and customers then actually
+it was looking pretty good um we had the
+second uh test running with banks and
+you know AI generated content detection
+which was also showing a lot of promise
+and made sense especially given that
+that was the time when generative AI
+just started you know
+booming and then the third I just just
+threw in there and I was like hey well
+and we also have this third idea that
+sounds completely crazy but we could
+probably maybe use AI to find molecules
+and help you know those Academia people
+and researchers in the industry to find
+drugs like drugs for
+cancer and I presented those three
+things um and my partner at Greylock um
+David hacker he he looked at me and he
+went you know what I think you should do
+the third one the crazy one the AI drugs
+one I was like wait what how so and he
+said look the first two make a lot of
+sense and you have good data and good
+founder market fit founder Pro problem
+fit makes a lot of sense but the last
+one is the one that gets your eyes to
+light up uh and if I know anything about
+early stage startups it takes a lot of
+passion from the founder to actually
+make it to the end because companies
+normally run out of stamina way before
+they run out of money
+uh and therefore I think this is the
+actual problem you care about you should
+work on this one it honestly to me it
+was shocking and I even after this
+conversation I did not immediately react
+uh but it grew on me you know at some
+point we had very honest conversation
+with my co-founders and we just realized
+that of all the things we could be
+solving with this technology that we
+have and generally like we could be
+solving in the upcoming 5 10 years of
+our
+lives but that there's nothing more
+important nothing more interes
+interesting that helping uh outstanding
+researchers out there to get to their
+goals faster and save lives and and help
+people to deal with disease so that's
+how we ended up
+here what uh I mean that that that is
+fascinating when you what was I guess I
+guess the first question I have for you
+what was the the reception beyond that
+initial um conversation with with with
+Greylock you know your eyes are lit up
+uh this is this is something we should
+pursue and then over the course of time
+you know probably in short order you
+expose your intent to the Biotech
+Industry the community you start talking
+to other investors you start talking to
+potential you know customers use cases U
+I'm curious about what the reception
+looked
+like um it varied obviously I got a lot
+of people were skeptical right like I I
+just in general I found that life
+sciences
+industry um is hard to penetrate for
+someone who doesn't have PhD in biology
+and doesn't have all the credentials in
+Academia or industry like who am I there
+some tech guy uh deciding to build some
+technology that would apparently replace
+scientists which by the way I never said
+I was going to do
+um what I was saying was like hey before
+that we were uh plumbers for ad industry
+and now we're going to be building tools
+for scientists but anyway um the um the
+uh initial reception varied uh however
+there was a very important thing for us
+as entrepreneurs as startup guys you
+know you either see some traction you
+see that you are showing some results
+early on or you're not uh and that what
+matters um and what we did we started
+writing tests and you know we first you
+know indexed nin's 40 billion uh
+molecular library and small molecular
+library and just started you know
+testing in silica our existing screen
+technology um against a couple of
+targets that our you know scientific
+adviser Professor chov um had um data
+for and we just started running all
+sorts of tests trying to see if the
+results do even make sense and and once
+we started seeing that there is some
+light and actually looks like there
+might be some good results um it became
+sort of irrelevant whether or not people
+on the outside believe that we can do it
+truth is we have technology we know how
+to develop it we have a process for
+building it and we have brilliant
+scientists who are willing to
+collaborate with us testing this
+technology and and seeing if it can be
+um applied to their programs that is
+enough to start um so around this time
+last year um I did two things um I sent
+an investor update to the rest of our
+investors saying hey we're pivoting to
+buai and here's why and I explained the
+whole thesis and two I discovered your
+podcast and started listening to it to
+understand uh how to approach the
+industry like I I really I was
+completely a complete newcomer um and of
+course another thing I have to say we
+are privileged to have this investors we
+have um especially like Kleiner Perkins
+who who were the original investors in
+Genentech at Round day and Brook buer
+specifically of kpcb uh who um who was
+kind enough to kind of give me a lot of
+initial introduction to this industry
+right he brought me to Laguna CEO Forum
+um where I met like a bunch of great
+people who gave me feedback straight
+away and that was very uh honest very
+kind of guards down conversations where
+people were receptive to the fact that I
+came from a different industry and I
+like didn't quite know what I was doing
+um and those conversations really
+steepened the the curve and you know
+allowed us to quite quickly start
+orienting ourselves at least initially
+um and you know we managed to sign our
+first deals um partnership deals in q1
+of next year so q1 this year basically
+right so just just a quarter after like
+official pivot which I think was super
+fast and just generally you know the the
+the speed at which we've been moving uh
+since we started bioptic bioptic is the
+name of our bio AI platform um the speed
+at which we've been progressing is quite
+fascinating like at this point we have
+13 uh therapeutic programs uh across
+several Partnerships in Academia and
+Industry uh and two in house programs
+and we progressing rapidly so I think
+you know when you have some results it
+makes it easier to believe in
+yourself yeah Andre um I I think it's uh
+it it says a lot about you and the
+company that you were able to uh attract
+some of these kind of Blue Chip
+investors uh particularly given the fact
+that there's so much noise about AI out
+there you know every every new biotech
+has some sort of of AI play what was
+there was there a key attribute or or a
+key piece of technology or you know a
+key aspect of yourself and you know your
+your founding team that you think helped
+to to attract some of those investors in
+in a short period of
+time yeah
+um I do have an outstanding team um and
+I think it was the right place and right
+time and we should not forget about this
+too like we raised our first round we
+raised $11 million seed from Kleiner
+Greylock and others um at in the very
+beginning of 2022 which was a very peak
+of venture industry just before it
+became really sour and the
+tech investment climate especially in AI
+space at that time looked way better
+than bio investment climate uh which I
+didn't realize until after we p
+inbi that like actually you know the uh
+uh the investment was actually quite
+quiet at that time right but um in Tech
+things were really peing so we got lucky
+with timing of of our first round but
+also answering your question of course
+you know the the biggest reason was the
+team like I had my tech pedigree uh
+which of course helps a lot when you
+approach um investors um and also my
+co-founders are incredible AI
+researchers with u like 50 plus prior um
+deep neural nness that they trained for
+different companies from Intel and nvea
+to um uh Pepsi and Nestle and whatnot so
+it like they had my co-founders had
+incredible uh experience before that uh
+working at the deepest level of ml AI
+research um and so you know yes yes of
+course every company right now is AI
+enabled it's obvious um like every
+company at the moment is using internet
+right like it wasn't the case back in in
+the 90s um uh it it's one thing that
+you're using some neural Nets or you're
+training some models for a specific
+Target that you're working on specific
+therapeutic programs and you help
+yourself to progress this this program
+forward with some computational tools
+there's a whole different game of trying
+to build foundational technology that
+would be Target agnostic that would
+generalize across many targets and
+potentially many modalities and that
+would really change the game for
+potentially hundreds of or thousands of
+biotechs out there um if it's successful
+and that is that is what we are up to
+right we're trying to build something
+that would be an enabling technology for
+many many programs across different
+targets different indications and
+potentially different modalities too
+in addition to um to founding bioptic
+you you also co-founded Mesto in 2020
+which is a a a community of of
+russian-speaking entrepreneurs and I'm
+curious about what um the war Russia and
+Ukraine has meant um for your business
+um if it's impeded you in any way or or
+what you might say about that conflict
+and its
+impact I know there's always some war
+and people suffering around the world
+but for me personally as someone who was
+born in Soviet Union immigrated out of
+Russia 20 years ago um for me this
+particular War has been the most
+heartbreaking horrible um geopolitical
+event in history um the uh the vastness
+of this crime the invasion of Ukraine
+the destruction of its cities and uh you
+know the the um conquest of their
+territories um all those things that
+Russia started in
+2022 um I cannot describe by any word by
+a crime um and of course it had
+ginormous impact on me personally on my
+community and on on our business as well
+um well first of all like we we work
+with some partner who are physically in
+Ukraine right now and which means that
+you have to work around F like some
+horrific facts that you know sometimes
+there might be a bomb um destroying
+their house or there could be uh
+electricity outages for you know hours
+and days um so that is obviously huge
+impact um apart from that like part of
+my team are ukrainians and you know some
+of my key people on the leadership team
+um you know who are now in us are
+actually came here as refugees from
+Ukraine um so that that is also a
+significant factor of course um and
+besides as I mentioned before the the
+recording um I think the fact that this
+War began in February
+2022 really forced me as a Founder to
+start this company and raise Capital way
+earlier than I otherwise would have
+because you know we were playing with
+hypothesis we were contemplating
+different product ideas but When The War
+Began it became obvious to me that we're
+going to have to be in position to help
+a lot of people who would need help some
+outstanding Tech Talent AI Talent um uh
+from Ukraine and from Russia too who had
+to flee from Putin's regime uh will need
+to find their new way of living in
+different places they they would end up
+and they would need jobs and you know we
+could help so in a way you know we have
+some outstanding AI people working for
+us
+um which otherwise we would have it
+would be hard for us to hire because
+they were all employed in some you know
+Tech Giants or like KF based startups um
+but because of the war you know they
+needed they needed a job and you know we
+were there to help so yes it's a very
+complex topic for me um but the simple
+answer to a question of course this war
+had ginormous impact on us both from
+business standpoint from the team
+standpoint and from the personal
+standpoint as
+well and that my friends is a difficult
+question to Pivot away
+from T tough to find a segue to to away
+from that one um so I'm I'm just going
+to make it rough uh you you said
+something earlier Andre uh that piqu my
+interest you were talking about your
+Partnerships the number of Partnerships
+that you have going in and then you
+mentioned a couple of
+inhouse programs yes what can you share
+about that if anything um I I will try
+to share as much as possible I cannot
+share some of the names because of the
+deals that we have um that we require
+like marketing approval um uh but um in
+Broad Strokes we have 13 uh small
+molecule programs we working on at the
+moment all preclinical um all are um
+highly uh novel chemical matter
+sometimes known targets some of the
+targets are completely new um um roughly
+half of them are Academia Partnerships
+so these are the first ones we started
+with and that was pretty much the way
+like I think of those investments from
+our our side as uh as U sort of a way to
+test our technology but also it's a
+marketing expense right so we in those
+Partnerships we do all the
+um uh uh computational drug Discovery
+work but we also synthesize uh chemical
+matter and then like the partner would
+run their essays and test uh the
+compounds that that we synthesize um and
+so obviously it costs money but I think
+it's worth it because in case you know
+we are not ready to publish those
+results yet but the results look really
+promising so once those papers out
+that's going to be a great way for us to
+market the platform um but closer to the
+uh uh July last year we signed out first
+industry partnership uh and I think this
+is one interesting thing that
+differentiates by optic is that I do
+think we found an interesting angle into
+the industry which is different from
+what I've seen before um and that is
+partnering with um Venture creation
+funds or bio
+investors uh to help them drisk their
+asset uh companies like single asset
+companies that they invest in or help
+them boost progress on those programs
+they invest in um and uh as far as I can
+see uh we are pretty unique in this
+approach like we developed a bunch of
+tools that
+are sort of investor facing and helping
+them first ass identify opportunities
+assess those opportunities and then
+actually help the research team uh uh
+within the program to to move faster
+using our tools um and so that first
+deal that we signed um uh in in
+July the first molecule out of 10 has
+been announced already it's called
+vindor Therapeutics um and it's a
+$17.5 million uh partnership in um um
+milestones and royalties um that that
+are paid to us um and it's an oncology
+drug Precision oncology I don't think we
+disclosed or they disclosed the target
+so will not go there so yes it's it's
+Academia it's a number of um uh industry
+Partnerships and we trying different
+business models like we we have a joint
+venture with one of the oncology
+Therapeutics companies uh we do have
+this sort of Milestone Revenue more like
+traditional research collaboration deal
+and we do have two internal targets one
+in a BCT and one in Parkinson's so yeah
+th those are those are internal internal
+project those are fully don't yes yeah
+those two yeah that's
+interesting when you look at the uh you
+know I I I I picture this as sort of a
+wiing Down Right like you you start you
+start optic you've got a bunch of
+potential applications and multiple
+verticals and then you get excited about
+the biotech
+opportunity um and there's an immediate
+use case an immediate application that
+you get to try out and test out when
+when you survey the biotech
+landscape and you open your mind up to
+Applications Beyond those that you
+tested early that you played with early
+what do you see what do what do you see
+that you're compelled to perhaps pursue
+in terms of applications for your
+technology that's a great question um
+because yeah you know I'm I'm being very
+honest here we
+started with the use case that just fell
+on our lap because we had technology and
+we had someone who wanted to use this
+technology for hit ID uh and then like
+later on a few months in you realized
+that actually that's how most of the
+first wave of uh AI drug Discovery
+companies back in 2014 started like Adam
+Wiis and Sil everyone started with with
+h sort of okay small molecules hit ID
+we're going to do some sort of virtual
+screening technology that will be fast
+uh and whatnot uh and so you know rtech
+was uh um you know it seems to be
+working really well but truth is it's a
+it's a pretty crowded space and it is
+one of many use cases that need to be
+solved and now that you know we we've
+been at it for a while we're of course
+expanding our offering to to many more
+new ideas like as I as I mentioned for
+example bio opportunity assessment and
+uh tools for investors is kind of a
+direct result of this better
+understanding of the landscape all that
+said I think it's pretty clear that we
+we have not as an industry we have not
+solved um any of those use cases
+completely entirely it's not like you
+have a fully generalizable model right
+now that enables zero shot denova small
+molecule Discovery right like no or
+didn't know zero shot for anything
+actually not just small molecules um so
+there's tons of opportunity at every
+stage um but you know
+as I as someone mentioned to me you know
+if you want to speed up drug Discovery
+and you're focusing on preclinical tools
+it's like you spitting up the trip from
+San Francisco to London by spitting up
+Uber to the
+airport and yeah like it makes sense of
+course like vast majority of time and
+money goes into clinical trials and you
+know I do believe that eventually we
+will get to the point where uh we'll be
+ready to create like digital twins for
+at least animal models and then like
+maybe at some Point like far far far in
+the future for humans um and so that
+would be a whole different world we're
+nowhere near that yet but I think for
+now realistically uh where uh um you
+know there is a lot of opportunity um
+like the initial heat ID sure great like
+there's our technology there's other
+Technologies out there something is has
+been happening and like I think right
+now with uh with new uh NE architecture
+like generative AI wave of AI let's call
+it this way uh we have a chance to make
+it way better uh but I do believe that
+you know there's a lot of opportunity in
+multiparameter optimization and so like
+hit to lead and Lead op phases that's
+also preclinical but you know it's not
+solved and there's a lot of stuff that
+will be happening there and I see a lot
+of teams doing great job um at this
+stages um when it comes to clinical
+stages you know I'm not I haven't
+touched it enough to understand it
+deeply you know but it's also clear to
+me that there's a bunch of low hanging
+fruits like for example I've been
+chatting with someone about um medical
+consent procedure when uh you're trying
+to enroll the patient in the clinical
+trials uh and you know is really it's
+not solved the user experience of this
+procedure is like really really complex
+right now and I think you know it's a
+completely different type of AI
+technology but if you imagine like a a
+better designed AI based um uh consent
+procedure that could really change make
+a difference because you know I I'm used
+to um um you know at Google you used to
+making a small change and and and
+creating like millions of dollars of
+value using this little change because
+the overall volume of of customers is so
+big so in clinical trials that's where
+you know 1% change 1% increase in
+efficiency can actually mean tens of
+millions of dollars of value saved or
+you know in other words generated for
+the customer um so that is a huge
+opportunity too like we are
+still we are remaining in preclinical uh
+for now but we as I mentioned before
+we're expanding Beyond uh into sort of
+opportunity analysis and uh uh detecting
+new investment opportunities for for
+investors which is which is an
+interesting different play
+um overall the industry I think you know
+the next big Frontier like we going to
+figure out chemistry with AI I think
+that's pretty clear at this point um but
+figuring out biology is a whole
+different game right when you design a
+molecule that theoretically even like
+with wetl validation like in our cases
+we're very proud that you know the
+molecules would generate in silica then
+work well in the wet lab and and you run
+your assays and yes it binds and yes
+like the the potency is there and you
+know you're
+excited this is not a drug and and this
+molecule put in a living cell and the
+whole complexity of it and then in
+living tissue and then the living organ
+and the living body is a whole different
+level of complexity which we're not even
+approaching yet and I think um you know
+the next Frontier for the AI drug
+Discovery industry of course is modeling
+biology and which is why I see a lot of
+my you know some of the smartest people
+I met at Google actually getting there
+like Dave Burke who used to be the
+engineering manager for my YouTube
+mobile team back in the day and then he
+was the uh the leader at the Android
+team recently announced that he is
+joining Arc Institute to work on cell
+models I you know um uh Steph who used
+to be a product manager Steph V griin
+who used to be the product manager like
+pel product manager uh at Google and and
+his partner Daniel Dao who who used to
+be an engineering manager on YouTube
+mobile as well uh they co-founded U I'm
+not sure if if Daniel is co-founder but
+they both are at cradle um and they are
+uh you know doing protein uh generation
+with AI um so my point is more and more
+people um who I consider some of the
+smartest people I have ever worked with
+are moving into this field of solving
+biology with AI which is I think the
+next level of complexity after chemistry
+yeah that's uh that's fascinating um I
+I'm curious about you know the I guess
+first your your content recognition
+technology maybe you could give us a a
+kind of overview of that and then also
+talk about the data inputs that you're
+using you know particularly with respect
+to chemistry and and now biology is
+there you know what kinds of biological
+data you know is coming in you know how
+much is it of accessible you know are
+there types of data that you want that
+you can't have um I'll stop asking
+questions right now and let you respond
+sure uh well starting from the beginning
+um our our screening Tech the content ID
+as we called it um is essentially was
+essentially a super high uh uh
+performance similarity search engine so
+in in simple terms um uh it would enable
+you to index billions of items whatever
+uh it could be like for us it's all
+vectors right but it's a
+vector representation of some
+information it could be an image it
+could be a video it could be a molecule
+um and then U you know the way uh our
+our platform was engineered initially
+was designed for Speed so that you can
+uh perform a very quick searches and
+find simil similar vectors to the one
+that you are looking at
+and depending on what you encode with
+this Vector um you can you can apply
+this technology to for different content
+types so initially as I said we did it
+for videos or for images um but when it
+comes to molecules this is where the
+term similarity search might be
+confusing because like in chemistry or
+you know in drug Discovery when people
+say similarity search they mostly mean
+structural similarity so you look for a
+molecule that is structurally similar to
+the one you you started with um in our
+cases we meant something completely
+different so what we encoded as those
+vectors were activity profiles of of
+molecules so we took data from initially
+from binding DB which essentially is a
+you know in simple terms would be a
+small molecule and a protein by pocket
+of a protein that it binds to and so
+that together would be an activity
+profile for us we would encode it uh uh
+and then we would Index this um um uh
+this data um and and that would enable
+us to find for like in in some other
+larger data set like for example nanses
+um synthesizable compounds database um
+we could find a molecule a small
+molecule that would be completely
+different structurally from the the ones
+that we've ever seen in our origional
+training data set but that according to
+the neural net would have similar
+activity profile to something that you
+care about like for example example uh
+uh think of a patent busting use case
+like you know when we started bioptic
+everyone was crazy about gp1s right so
+uh great you you log into bioptic and
+you take a known uh uh legant for um
+whatever
+glp1 you put it into the system and and
+and ask it to search um let's say a a a
+billion uh compound uh data set that
+either you brought as a library or you
+know something from one of our partners
+like e molecules or enin um and what
+bioptic would be able to do is to find
+um let's say 100 molecules that would be
+less than4 T similarity uh with the
+original molecule that you put in
+however they would have similar activity
+to the same receptor um and that is that
+was the original use case for like our
+very first te technology when we just
+straight up adopted our first um
+technology to to bio of course since
+then we've built a lot of new tools like
+our new model that we're really proud of
+and we're really excited about a
+structure-based model that we designed
+Works using completely different
+principles at this point which means
+that you know you can just input any
+protein sequence uh for your Target it
+could be completely noval Target it
+could be a target with no 3D structure
+resoled actually
+um and the model would uh design a small
+molecule or it would find a small
+molecule among the library that you
+would provide that would most likely
+bind to this to this pocket and it will
+detect the pocket itself uh pocket
+automatically it will uh understand the
+3D structure automatically so you skip
+the whole Alpha fold or you know crystal
+structure step Al together and it just
+spits out a number of molecules that you
+would take to the wet lab so it's now
+it's a whole different game
+yeah and you you mentioned several
+different databases that you're using to
+access that molecular data are you
+building a kind of
+proprietary database of of bioptics own
+at this point are you still on the you
+know always trying to bring in
+increasingly more data from more sources
+uh what What's your view on
+that um well data is a huge problem for
+the industry in general right let's
+let's start there uh what I didn't
+realize getting into bio was um you know
+our thesis was we should be building AI
+for Industries where there's a lot of
+data a lot of capital and not enough uh
+Native AI Talent that's how we started
+uh and bio seemed like a perfect
+industry clearly a lot of data clearly a
+lot of money uh and probably like vast
+majority of people who graduate with uh
+you know data science machine learning
+degrees they do not go to fiser or or
+Merc uh they go to open AI at Google and
+Google so felt like okay this is an
+interesting opportunity for us to work
+on however when we would we like when I
+looked into this realized we realized
+that vast majority of data is
+proprietary and in fact it's it's not
+normalized it's very often very noisy um
+there's loads of problem and and I think
+even the bigger problem uh for someone
+like us who is trying to build a
+foundational like Target agnostic
+technology is that the kind of data that
+you uh the kind of data collection and
+generation technologies that you need if
+you're working on specific program a
+specific Target or even a specific
+modality uh that your approach to data
+generation is different from uh when
+you're trying to build something
+horizontal and when you try to build
+something horizontal you need a very
+diverse data set you need like you
+cannot afford paying per data point as
+much as you would pay uh if you were
+working on a very narrow domain around
+certain uh Target for example um there's
+there's a whole new set of challenges in
+terms of data generation if you're
+trying to do it across um uh across a
+vast uh chemical space as domain so it's
+not a solved problem like all of The
+Binding DB that we initially used to
+train our first model I think it was
+like less than 10 million data points
+it's like I don't remember exact number
+but it's something like around let's say
+10 million data points um the number of
+tokens that was used to trained GPT that
+was the first like truly generalizable
+language model was around a trillion
+tokens right so it's what six five six
+orders of magnitude right difference uh
+we are nowhere near a number of data
+points needed and that's just in this
+one particular idea of like binding
+right but there's so many more uh
+parameters that you need to optimize so
+it just the industry itself does not
+have data even if we could pull all the
+data from all the proprietary sources at
+the moment I'm convinced we don't have
+enough data to actually build something
+truly generalizable and so like right
+now there's a new crop of tech bio
+companies uh that are trying to solve
+this from different angles you know D
+Dell libraries is interesting technology
+phase displays interesting stuff and I
+think there's the reason why we're
+seeing so much progress in protein
+design right now because sequence-based
+data in many cases can be synthetically
+generated like you can you can actually
+pre-train models with a lot of synthetic
+data which is a fantastic opportunity um
+doesn't solve all of your problems but
+you know our new structure-based model
+uh is actually using uh um pre-trained
+Parts like it's it's using parts of esm
+which is which was trained on you know
+billions of possible protein sequences
+and so these this this combination of
+like real world uh Technologies for for
+measuring uh real wet experiments but uh
+in a way that is economically viable and
+combining with it with either syn pure
+synthetic data or better scraped and
+better normal normalized and better
+classified public data from you know
+more Niche sources like negative data
+from failed programs for example which
+is I think for now is still untapped
+uport like combining all those sources
+together is probably like what a lot of
+companies like ours are going to be
+doing over the next decade or so do you
+see anything uh a foot that that might
+um contribute to the solution to that
+that dir of of of available data and
+when I say that I mean like uh you know
+any any collaborative efforts any
+industrywide efforts to unlock some of
+this proprietary data or to your point
+some of this this negative data that
+usually kind of gets left on the The
+Cutting Room floor and and ignored for
+its value to to Technologies like yours
+I mean if you look out three five years
+uh you know do you see any any
+influences that
+might not create a glut but at least
+reverse the dir of of data that we're
+looking at right now um my honest answer
+is I don't know um I mean there's been
+initiatives that looked promising like
+Melody right it sounded like an
+interesting way of like fated learning U
+but I don't know if it like what was the
+impact of it um for now my personal bet
+is
+that it's still going to be um massive
+investment in in data generation
+pipelines through automation through new
+uh specifically designed assets that
+would make it possible to do it at like
+at a massive scale maybe some cross
+modality data generation like gen you
+know adapting uh sequence-based uh data
+uh and and maybe like building like a
+Google translate quote unquote for like
+you know peptides to small Mo like that
+kind of stuff there's ideas there's like
+plenty of teams with ideas of how to
+build a data generation pipeline that
+would enable you to generate like
+billions or even trillions of data new
+data points and so my bet for now is
+that one of those efforts will more
+likely to succeed and actually start
+like generating new massive data sets
+across different targets rather than
+existing data sets will somehow be
+reconciled and you know unlocked and
+whatnot there's too too much headwind um
+in the way this industry is set up um
+you know data is gold and uh and and
+just like the way big Pharma is set up
+is such that it's not really designed
+for for sharing the data at this point
+like even for us we are working with
+many customers right but we cannot
+really use um specific data points from
+customer programs um to train our
+foundation model because you
+know there's an IP right so basically
+all those data points that can we can
+use to refine a model for a specific
+program and actually make it more
+efficient for this target or this
+particular molecule um it is not really
+contributing to the uh to the to other
+programs so we have to generate our own
+data that's actually like clean AP mhm
+yeah how you doing on time Andre I'm
+okay like Joe ran Joe Rogan me as much
+as you want but yeah I totally get it
+that at some point you'll have you'll
+have to cut it uh in pieces so please
+stop when you feel like we should no
+that's the direction we're going where
+we're gonna turn this one into a three
+hour three-hour long episode um good I
+want I want to Pivot uh a little bit to
+the the landscape of of AI players of of
+several different flavors in in biotech
+right now and get a sense for where
+bioptic fits and and what you see
+playing out in this sort of nent I say
+nent but I mean it's it's maturing
+rapidly I think at least in terms of of
+volume and applications you've worked
+your entire career in some pretty um
+competitive Hightech Tech environment so
+I'm I'm I'm curious about your
+perspective on this um we've had on this
+show a number of notable uh and
+well-funded
+biotechs that are building on AI
+backbones I think of companies like
+recursion you know Chris Gibson's been
+on the show before uh which just
+inquired accentia I mean that's a that's
+a power house there um Ben Ben
+referenced uh when we were we were
+chatting in advance of the episode uh
+Hong Kong based en silico medicine
+another one um just a just a couple
+weeks ago uh Vic Bajaj from foresight
+Labs was was on the show and they just
+launched a new company called Zara a bio
+bio biopharmaceutical development
+company called zero with a billion
+dollars in in funding behind it AI
+driven so there's that you know you look
+at like the in the in the mid tier like
+Flagship pioneering every company that
+they spin out
+these days has got an AI
+backbone and then further Downstream
+looking at like sort of the service like
+application service providers if you
+will you've got a ton of these little
+you know I shouldn't say little but
+smaller uh sort of sort of uh it's
+cottage industry of companies like like
+uh like profluent and evolve they
+they've been on the their Founders have
+been on the show as well um and they're
+looking to provide AI as a service to to
+biotechs as it stands right now and then
+maybe forward looking uh you know a few
+years down the road where do you where
+do you kind of see bioptic fitting on
+this
+landscape sure well first let's talk
+about you know my view on the industry
+in general
+um I think every Pharma in 10 years from
+now will be AI first Pharma like to me
+it's pretty clear right the at the end
+of the day drug Discovery and Drug
+development is about working with vast
+amount of data uh making decisions uh
+and and progressing and designing
+something uh using this data uh we've
+been doing it originally like science
+was done hypothesis driven way um where
+human with big brain comes up with some
+great idea and then collects some data
+to refine this idea builds a very local
+very specific model to sort of help
+steer in a in a close proximity to the
+original hypothesis and like then either
+prove it or disprove it and you know
+move on and and and we move from that
+world uh to the world where we do data
+first research where we're mining
+ginormous data sets and then like
+nowadays we creating some super smart
+foundational models that can generalize
+foundational Concepts from those data
+sets and then you know start spitting
+out decisions that are were not even
+human driven um is a a whole different
+world we're approaching um and so to me
+it's pretty clear that human's ability
+human brain's ability to deal with vast
+amounts of data over the next 10 years
+will notable dramatically however um our
+AI technologies will improve orders of
+magnitudes right so to me it's it's
+pretty obvious that just like every
+retail became an e-commerce over the
+last 15 years 20 years um similarly
+every farma will be an AI company going
+forward
+now what uh does it take uh to be a
+great AI company well I think to build
+AI Advantage you need three things very
+roughly right you need talent Advantage
+so you need to have people who are
+really good at it uh you need data
+Advantage um and you need computer
+advantage and eventually computer
+advantage means right now for now it
+means do you have access to chips
+eventually it will mean do you have
+access to enough energy um so at this
+large scale if you think of this like
+from the top level right
+um if the transition from today to the
+future of Pharma is similar to the
+transition from like old school
+retailers to uh today's retail which is
+all e-commerce enabled and you think of
+the number of enabling Technologies and
+different kinds of companies that make
+this transition possible um you realize
+that there's a lot of opportunity um in
+the next 10 years there's going to be a
+lot of different shapes and forms of
+companies uh that contribute to this
+eventual um outcome of of of AI enabled
+farmer and sure like you know in
+e-commerce you had a fully vert
+vertically integrated players like
+Amazon uh who started in the very
+beginning of of this transition and were
+very different from uh retailers back
+then and at that time like brick and mor
+retailers were you know laughing at them
+uh and then eventually this huge
+vertically integrated companies became
+the uh the massive dominating Force
+um and so you know I think we're going
+to see that in Pharma so you know we
+probably will find some new big Pharma
+uh that will be an AI first company and
+maybe zyro is one of those companies
+maybe isomorphic will be one of those
+companies I don't know um but again like
+drawing this parallel with retail you
+also see that there's a lot of
+horizontal technology companies that
+enable different parts of the stack and
+like you know you have tons of uh
+smaller shops run by e-commerce
+platforms like um Shopify or using
+Shopify technology or using you have the
+ginormous company stripe that is
+essentially like enabling all the
+payments industry uh and so on so forth
+there's so much um in the stack t pack
+and then each one of those layers is a
+ginormous opportunity so back to your
+question if you know yes there's a lot
+of AI companies out there and they have
+all sorts of different shapes and forms
+when when you double click into them
+some of them are you know effectively a
+biotech that is using AI technology to
+progress a number of assets they care
+about some of them are trying to be a
+horizontal platform but let's you know
+let's say those were like the first wave
+of AI companies back in 2010
+2014 um they just didn't have enough
+enabling technology back then and nor
+they had enough data or compute to
+actually deliver on that promise and so
+we saw a lot of very
+disappointing uh you
+know cases where you know companies just
+did not deliver and did not get even
+with one asset into Clinic over the last
+10 years right and we'll know different
+examples here I think there's a new wave
+of companies right now that are relying
+on the modern AI technology that uh you
+know Transformer architecture like the
+the new generation of chips that enable
+way uh bigger sort of data processing
+capability um and that also they do
+their own high throughput data
+generation and so I think this is like
+the current state-ofthe-art and there's
+a lot of excitement there uh and some of
+them are trying to be uh like sort of a
+horizontal platform enablers and some of
+them are also just using this technology
+for their own internal therapeutic
+programs um and so from now on like in
+the future as I mentioned I do think
+that there's going to be more and more
+um new like Next Generation air
+companies that would actually try to
+solve biology um and and model cells uh
+and maybe even bigger uh uh like tissues
+and organs um using AI technology we're
+not nowhere near that yet I don't know
+when it's going to happen but there's
+there's also going to be a huge next
+wave a big new crop of companies that
+will enable that at some point all that
+to say
+is yes there's there's a bunch of
+companies out there I do think there's a
+lot of opportunity and then the question
+is like how do you combine your talent
+Advantage your data advantage and your
+computer Advantage vectors to create a
+meaningful
+proposition in our case we do have
+talent Advantage for sure just you know
+we as I mentioned in the beginning we we
+are lucky to be able to hire people who
+otherwise would have worked at Google or
+Intel or like you know our head of
+science is from atom wise and we have
+people from En silica from neuralink
+from App
+um working on bioptic it's a very strong
+team um we are working on our data
+Advantage strategy at the moment like we
+have our own uh uh strategy that we're
+pursuing but I'm not ready to disclose
+it yet um we do not have any compute uh
+Advantage Beyond like you know comparing
+to Google uh or uh you know Nvidia we
+don't have our own data centers we don't
+have our own chips so that is the part
+where you know at some point we we'll
+have to figure something out but we're
+relying on existing platforms and we're
+not limited by for now um and as a goto
+Market strategy I think we found a very
+interesting angle that actually enabled
+us to sign those first deals like first
+commercial deals and you know I'm really
+excited about what's to come next year
+uh because this approach of uh trying to
+get to Market through people who enable
+investments in uh single asset companies
+or smaller biotex it's a meaningful
+strategy that so far worked well for us
+so partnering with Venture creation
+funds um bringing our talent advantage
+and our uh technology uh to their
+Investments to Der risk them and help
+discover new opportunities alt together
+seem to be working for us uh and we'll
+see where we end up and one last thing I
+wanted to mention is you know software
+company versus uh you know more classic
+asset ownership like there always going
+to be debate debate there you know when
+we started we as as you can imagine like
+I come from consumer applications world
+of course we wanted to build pure
+software play um but just you know
+learning more about this industry we
+realized
+that the way to capture value is to have
+a share in the actual assets uh and
+selling results rather than selling uh
+services or
+software so at this point we are you
+know the way we try to monetize us
+through equity in in the resulting
+assets um and I know that there are like
+some very successful companies who who
+go pure software way um but we picked
+this path and for now it's working well
+for
+us Andre I wanted to ask a question
+about your internal pipeline I I think
+you mentioned a preclinical program in
+with JP 1's and and in Parkinson's as
+well I was curious you know how you
+chose those if it was you know if it had
+more to do with the data that you have
+ACC access to or you know you're looking
+at therapeutic areas obviously gp1s
+obesity and and diabetes are are hugely
+lucrative um Parkinson's huge unmet need
+you know what what would you say about
+you know the the choosing I guess of
+those programs and then if you have any
+sense of how far away you are from
+clinical trials yeah um to clarify we do
+not have glp1 program um we are working
+on tinic um Target uh and we believe
+that
+like there is our hypothesis is that it
+is a target that can be relevant in
+obesity indication um uh and yes
+everybody everybody these days is just
+you know associating obesity with G gp1
+easy easy to do yes but but there are
+other targets too um um yes and and and
+answering your question uh how was we
+how we pick those targets very honestly
+just following business opportunity um
+so those are not uh completely Noble
+targets right the existing molecules for
+either of the targets we we're going
+after um we saw an opportunity uh we
+needed something to start uh testing our
+technology independently without any
+delays from partners and whatnot so we
+we picked a couple of reasonably hot
+targets where we knew that that was
+different enough to test our technology
+in different way
+and we knew that in case the uh you know
+those go well we can have valuable asset
+um so we're pursuing them we're going to
+solve whatever we're going to predict
+clinical trials one outcomes toxicity
+outcomes at the early stages using our
+technology and whatnot like all sorts of
+things like that alog together they they
+have platform technologies that are
+platform agnos that are Target agnostic
+and that potentially
+make resulting biotech more Capital
+efficient yeah and yes Matt like you did
+mention that maybe one day we found
+ourselves being a biotech you know
+someone told me a fellow tech tech bioff
+founder told me once well when Tech bio
+fails it becomes a
+biotech is that how it works if you
+cannot sell your platform you cannot
+like make your platform valuable enough
+to scale it the way you initially
+planning like what we are thinking of
+right now then yes you end up you're
+just valuing your company at the value
+of the assets you've developed so far
+mhm and that's why like there was a lot
+of disappointment with first wave of AI
+companies who really really tried super
+hard to build a scalable platform and
+did not invest enough into moving their
+internal assets to like clinical stage
+and then by the time became clear the
+platform itself is not monetizing they
+didn't have any clinical stage assets
+and at this point okay like they're not
+valuable anymore right and so those like
+huge drops and valuations that we've
+seen are driven by that so we're trying
+to like kind of
+be somewhere with balancing between the
+two uh because yes we are Tech bio but
+we do try to own equity in all the
+programs that we're working on and
+that's how we you know we try to seize
+the CT capture the value that we're
+creating Andre I apologize if I missed
+this earlier um but did you uh and to
+your to the point that you were just
+making do you have a an approximate
+timeline of when you might go into the
+clinic with your internal assets
+these are the forward-looking statements
+we ask for when there's no public
+relations or investor relations
+representative on the call with you yes
+and I uh as much as I would like to
+boast about our uh uh Uber optimistic
+timeline and road map yes of course we
+have a road map and we are uh you know
+pushing really hard to get there I do
+not think that it would be appropriate
+to make those statements in this call
+however what I I do want to say is that
+at least with those two assets that we
+own um you know our goal to hopefully
+Set uh
+uh a a record timeline from uh from
+starting the program to indd uh uh
+enabling studies phase but you know that
+is yet remain to be seen we are we we
+had a killer year it's been super fast
+and you know every adviser and every
+investors uh we have have told me that
+it's unprecedent fast you know how we
+got from where we started to where we
+are now however you know it doesn't mean
+that it's going to go as fast over the
+next year I'm very optimistic
+though are there any specific plans uh
+that you can share with us for for 25 I
+mean we're going to this episode's going
+to drop right around the the turn of the
+year so give us uh give us kind of a
+glimpse or a forward-looking uh hope uh
+or forecast right for for 25 sure I can
+talk about the platform plans and that's
+the part I'm mostly excited about um as
+I mentioned earlier uh we have developed
+our new structure-based uh model that is
+extremely promising like think of it it
+would enable things that uh you know
+state-of-the-art models like Alpha fall
+3 uh uh unable at the moment but it's a
+ridiculously simplified architecture
+which means it's way more Nimble it's
+easier to deal with um you know the way
+we describe it internally is if you're
+following space industry and you might
+have seen like this transition from
+raptor one engine to reptor 3 engine in
+SpaceX where they dramatically
+simplified the design of the engine
+removed a lot of like tubes and
+components that were like covering this
+uh This original design and that makes
+the whole thing way more
+manageable um so this is how we think
+about you know bioptic one the the
+structure based model that uh working on
+So the plan uh for the next year would
+be once we have all the data ready to
+publish uh a paper on it and actually
+present it to the world like in a more
+public way but you know Meanwhile we're
+using it for a number of programs um to
+actually progress those those molecules
+internally um so that's one
+structure-based model and and and
+Publishing the paper around it and two
+on the business side um you know fingers
+crossed uh I mentioned one deal that we
+signed last year but with have a couple
+more uh exciting deals that are in the
+works right now um so I hope we'll be
+able to announce all of them um
+sometimes uh you know earlier next year
+hopefully uh and actually like at this
+point I could be less cryptic about our
+partners and people we working with and
+the kind of deals we sign yeah uh what
+about internal growth like company
+growth are you looking to make any
+strategic hires grow grow Personnel or
+Talent
+there uh yes we uh like we've we've
+tried like you know we have an
+outstanding team at the moment and you
+know I try to move as fast as possible
+with a small number of uh uh humans
+employed as possible uh that said um we
+are you know I feel like we're reaching
+the limit so we're going to be hiring
+both on the uh science side on like a
+life science uh side of things and also
+on the computational science uh so AI
+researchers
+um we're probably going to start uh
+growing our business team too but that
+I'm not sure about and I think like
+sometime next year uh we're going to be
+raising the next round we we we're
+getting ready to yeah very cool well
+listen we uh we've been abusing your
+time Andre uh I I appreciate all the
+time that you've given us but we do need
+to wrap things up um and you just
+brought up you were talking about the
+the computational team and the biology
+team and and I want to have you back on
+the show for a more uh maybe a tighter
+episode where I don't keep you for an
+hour and a half um to to talk about that
+the marriage of these two things we we
+we've been talking about the marriage of
+computational minds and biology Minds
+for for a couple years now and when we
+first started talking about that it was
+sort of like well you know you put them
+in the same room and you make them talk
+to one another but now is this as this
+concept is matured you know and you have
+companies like bioptic that are actually
+bringing you know on onboarding these
+the these uh this Talent um I think it'd
+be fun to have a conversation about how
+we're we're we're consummating this
+marriage in in real time so if you're
+game for that we're going to have you
+back on sometime down the road to talk
+about that and all the progress that we
+expect to see out of bioptic in the
+coming year I'd be privileged to come
+again and talk about the marriage of
+tech and bio because I think that's the
+most interesting thing that is happening
+in the industry at the moment
+all the most interesting things they
+happen at intersections and the
+intersection of AI which is essentially
+artificial Evolution life uh and bio
+which is the actual Evolution life this
+intersection seems to be the most
+exciting things thing there is yeah no
+doubt and you're fun to talk to about it
+so I appreciate it thanks for coming on
+Andre thanks guys thanks a lot
+Andre so that's bioptic founder and CEO
+Andre doy I'm Matt Piller I'm Ben comr
+and you just listen to the business of
+Biotech we're produced by life science
+connect and we can be found on
+lifescience leer.com and anywhere you
+listen And subscribe to podcasts do that
+subscribe so you never miss an episode
+be sure to leave us some feedback on how
+we're doing or a guest or topic
+suggestion or just say hi we drop every
+Monday keep it dialed and as always
+thanks for listening
+right
+[Music]
