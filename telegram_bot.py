@@ -96,18 +96,18 @@ class DoronichevBot:
 Хочешь про продукт? Стартап? Команду? Или мотивацию?
 Я постараюсь объяснить так, как рассказал бы другу
 
-Вот несколько вопросов для вдохновения:"""
+Или вот одна из тем, которую можем разогнать:"""
         
         text_en = """Great to see you here!
 Now the ball is in your court — ask away.
 Want to discuss products? Startups? Teams? Or motivation?
 I'll try to explain like I would to a friend
 
-Here are some questions for inspiration:"""
+Or here's one of the topics we can explore:"""
         
         text = text_ru if user_lang == "ru" else text_en
         
-        # Получаем случайные вопросы
+        # Получаем случайные вопросы (теперь это словари с teaser и full)
         questions = get_random_questions(user_lang, 3)
         
         # Сохраняем вопросы в контексте пользователя
@@ -116,13 +116,10 @@ Here are some questions for inspiration:"""
             context.user_data = {}
         context.user_data['questions'] = questions
         
-        # Создаем кнопки с короткими ID
+        # Создаем кнопки - показываем ТИЗЕРЫ
         keyboard = []
         for i, q in enumerate(questions):
-            # Используем короткий ID вместо полного текста
-            # Увеличиваем лимит до 80 символов для лучшей читаемости
-            button_text = q if len(q) <= 80 else q[:77] + "..."
-            keyboard.append([InlineKeyboardButton(button_text, callback_data=f"q_{i}")])
+            keyboard.append([InlineKeyboardButton(q["teaser"], callback_data=f"q_{i}")])
         
         reply_markup = InlineKeyboardMarkup(keyboard)
         
@@ -217,7 +214,6 @@ Here are some questions for inspiration:"""
         query = update.callback_query
         await query.answer()
         
-        # Получаем ID вопроса из callback_data (например, "q_0", "q_1", "q_2")
         callback_data = query.data
         
         if not callback_data.startswith("q_"):
@@ -225,7 +221,7 @@ Here are some questions for inspiration:"""
         
         question_index = int(callback_data.split("_")[1])
         
-        # Получаем полный текст вопроса из сохраненных данных
+        # Получаем вопрос из сохраненных данных
         if 'questions' not in context.user_data:
             await query.message.reply_text("Извините, вопросы устарели. Нажмите /start чтобы получить новые.")
             return
@@ -234,9 +230,9 @@ Here are some questions for inspiration:"""
         if question_index >= len(questions):
             return
         
-        question = questions[question_index]
+        # Берём ПОЛНЫЙ вопрос, а не тизер
+        question = questions[question_index]["full"]
         
-        # Отправляем вопрос как обычное сообщение
         user_id = query.from_user.id
         
         if config.ENABLE_ANALYTICS:
