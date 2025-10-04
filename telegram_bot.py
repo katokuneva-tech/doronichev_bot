@@ -173,6 +173,10 @@ Here are some questions for inspiration:"""
     async def handle_message(self, update, context):
         user_message = update.message.text
         user_id = update.effective_user.id
+        username = update.effective_user.username or "без username"
+        
+        # Логирование входящего сообщения
+        logger.info(f"📨 Вопрос от @{username} (ID: {user_id}): {user_message}")
         
         if config.ENABLE_ANALYTICS:
             self.analytics.log_message(user_id, user_message)
@@ -186,6 +190,10 @@ Here are some questions for inspiration:"""
         context_info = self.search_knowledge_base(user_message)
         
         response = self.generate_response(user_message, context_info, user_id)
+        
+        # Логирование ответа
+        logger.info(f"💬 Ответ для @{username}: {response[:100]}...")
+        
         await update.message.reply_text(response)
     
     async def button_callback(self, update, context):
