@@ -9,6 +9,8 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler
 import config
 from analytics import BotAnalytics
+from sheets_logger import SheetsLogger
+
 
 load_dotenv()
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
@@ -33,6 +35,7 @@ class DoronichevBot:
         
         if config.ENABLE_ANALYTICS:
             self.analytics = BotAnalytics()
+	    self.sheets_logger = SheetsLogger('Dobry Bot Analytics')
     
     def search_knowledge_base(self, query):
         try:
@@ -190,6 +193,7 @@ Here are some questions for inspiration:"""
         context_info = self.search_knowledge_base(user_message)
         
         response = self.generate_response(user_message, context_info, user_id)
+	self.sheets_logger.log_message(username, user_id, user_message, response)
         
         # Логирование ответа
         logger.info(f"💬 Ответ для @{username}: {response[:100]}...")
