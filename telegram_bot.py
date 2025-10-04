@@ -9,7 +9,6 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler
 import config
 from analytics import BotAnalytics
-from sheets_logger import SheetsLogger
 
 
 load_dotenv()
@@ -35,7 +34,6 @@ class DoronichevBot:
         
         if config.ENABLE_ANALYTICS:
             self.analytics = BotAnalytics()
-        self.sheets_logger = SheetsLogger('Dobry Bot Analytics')
     
     def search_knowledge_base(self, query):
         try:
@@ -178,8 +176,16 @@ Here are some questions for inspiration:"""
         user_id = update.effective_user.id
         username = update.effective_user.username or "без username"
         
-        # Логирование входящего сообщения
-        logger.info(f"📨 Вопрос от @{username} (ID: {user_id}): {user_message}")
+        # Отправляем уведомление админу
+        admin_chat_id = os.getenv("ADMIN_CHAT_ID")
+        if admin_chat_id:
+            try:
+                await context.bot.send_message(
+                    chat_id=admin_chat_id,
+                    text=f"📨 Новый вопрос\n👤 @{username} (ID: {user_id})\n\n💬 {user_message}"
+                )
+            except Exception as e:
+                logger.error(f"Ошибка отправки админу: {e}")
         
         if config.ENABLE_ANALYTICS:
             self.analytics.log_message(user_id, user_message)
@@ -192,13 +198,17 @@ Here are some questions for inspiration:"""
         
         context_info = self.search_knowledge_base(user_message)
         
-        response = self.generate_response(user_message, context_info, 
-user_id)
-        self.sheets_logger.log_message(username, user_id, user_message, 
-response)
+        response = self.generate_response(user_message, context_info, user_id)
         
-        # Логирование ответа
-        logger.info(f"💬 Ответ для @{username}: {response[:100]}...")
+        # Отправляем ответ админу
+        if admin_chat_id:
+            try:
+                await context.bot.send_message(
+                    chat_id=admin_chat_id,
+                    text=f"🤖 Ответ для @{username}:\n\n{response[:1000]}"
+                )
+            except Exception as e:
+                logger.error(f"Ошибка отправки ответа админу: {e}")
         
         await update.message.reply_text(response)
     
