@@ -175,16 +175,10 @@ Or here's one of the topics we can explore:"""
         user_message = update.message.text
         user_id = update.effective_user.id
         username = update.effective_user.username or "без username"
-        # Пытаемся определить пол по имени
         first_name = update.effective_user.first_name or ""
-        # Простая эвристика (не точная)
-        gender_hint = ""
-        if first_name:
-            # Женские окончания в русском
-            if first_name.endswith(('а', 'я', 'на', 'ья')):
-                gender_hint = "female"
-            else:
-                gender_hint = "male"        
+    
+        # Передаём только имя, GPT сам определит род
+        user_info = f"Имя собеседника: {first_name}" if first_name else None   
         
         # Отправляем уведомление админу
         admin_chat_id = os.getenv("ADMIN_CHAT_ID")
@@ -226,37 +220,41 @@ Or here's one of the topics we can explore:"""
         """Обработка нажатий на кнопки с вопросами"""
         query = update.callback_query
         await query.answer()
-        
+    
         callback_data = query.data
-        
+    
         if not callback_data.startswith("q_"):
             return
-        
+    
         question_index = int(callback_data.split("_")[1])
-        
+    
         # Получаем вопрос из сохраненных данных
         if 'questions' not in context.user_data:
             await query.message.reply_text("Извините, вопросы устарели. Нажмите /start чтобы получить новые.")
             return
-        
+    
         questions = context.user_data['questions']
         if question_index >= len(questions):
             return
-        
+    
         # Берём ПОЛНЫЙ вопрос, а не тизер
         question = questions[question_index]["full"]
-        
+    
         user_id = query.from_user.id
-        
+        first_name = query.from_user.first_name or ""
+    
+        # Передаём только имя, без явного определения пола
+        user_info = f"Имя собеседника: {first_name}" if first_name else None
+    
         if config.ENABLE_ANALYTICS:
             self.analytics.log_message(user_id, question)
-        
+    
         await context.bot.send_chat_action(chat_id=query.message.chat_id, action="typing")
-        
+    
         context_info = self.search_knowledge_base(question)
-        
-        response = self.generate_response(question, context_info, user_id)
-        await query.message.reply_text(f"❓ {question}\n\n{response}")
+    
+        response = self.generate_response(question, context_info, user_id, user_info)
+        await query.message.reply_text(response)
     
     def run_bot(self):
         app = Application.builder().token(self.telegram_token).build()
