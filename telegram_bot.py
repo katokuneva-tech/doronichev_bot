@@ -92,7 +92,8 @@ class DoronichevBot:
             return "Короче, что-то пошло не так. Попробуй еще раз."
     
     async def start_command(self, update, context):
-        user_lang = "ru"
+        user_lang_code = update.effective_user.language_code or "ru"
+        user_lang = "en" if user_lang_code.startswith("en") else "ru"
         
         text_ru = """Круто, ты здесь. 
 Теперь дело за малым — задавай вопрос.
