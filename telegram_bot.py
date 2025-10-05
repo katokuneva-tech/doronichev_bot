@@ -100,12 +100,18 @@ class DoronichevBot:
 Хочешь про продукт? Стартап? Команду? Или мотивацию?
 Я постараюсь объяснить так, как рассказал бы другу
 
+🌍 Этот бот мультиязычный — можно общаться на любом языке.
+🇺🇸 English | 🇷🇺 Русский | 🇪🇸 Español
+
 Или вот одна из тем, которую можем разогнать:"""
         
         text_en = """Great to see you here!
 Now the ball is in your court — ask away.
 Want to discuss products? Startups? Teams? Or motivation?
 I'll try to explain like I would to a friend
+
+🌍 This bot is multilingual — feel free to ask in any language.
+🇺🇸 English | 🇷🇺 Русский | 🇪🇸 Español 
 
 Or here's one of the topics we can explore:"""
         
