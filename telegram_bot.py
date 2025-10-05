@@ -253,7 +253,7 @@ Or here's one of the topics we can explore:"""
     
         context_info = self.search_knowledge_base(question)
     
-        response = self.generate_response(question, context_info, user_id, user_info)
+        response = self.generate_response(question, context_info, user_id)
         await query.message.reply_text(response)
     
     def run_bot(self):
