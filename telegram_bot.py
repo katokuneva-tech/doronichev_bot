@@ -58,6 +58,9 @@ class DoronichevBot:
             if context:
                 messages.append({"role": "system", "content": f"Контекст: {context}"})
             
+            if 'gender_hint' in locals():
+                messages.append({"role": "system", "content": f"Вероятный пол собеседника (не точно): {gender_hint}"})
+
             for msg in history[-config.HISTORY_CONTEXT_MESSAGES:]:
                 messages.append(msg)
             
@@ -172,6 +175,16 @@ Or here's one of the topics we can explore:"""
         user_message = update.message.text
         user_id = update.effective_user.id
         username = update.effective_user.username or "без username"
+        # Пытаемся определить пол по имени
+        first_name = update.effective_user.first_name or ""
+        # Простая эвристика (не точная)
+        gender_hint = ""
+        if first_name:
+            # Женские окончания в русском
+            if first_name.endswith(('а', 'я', 'на', 'ья')):
+                gender_hint = "female"
+            else:
+                gender_hint = "male"        
         
         # Отправляем уведомление админу
         admin_chat_id = os.getenv("ADMIN_CHAT_ID")
