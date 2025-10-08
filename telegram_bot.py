@@ -151,6 +151,13 @@ Or here's one of the topics we can explore:"""
 Буду рад любой обратной связи!"""
         await update.message.reply_text(text)
     
+async def clear_command(self, update, context):
+        user_id = update.effective_user.id
+        if user_id in self.conversation_history:
+            self.conversation_history[user_id] = []
+        text = "✅ История диалога очищена. Начнём с чистого листа!"
+        await update.message.reply_text(text)
+    
     async def stats_command(self, update, context):
         user_id = update.effective_user.id
         
@@ -269,6 +276,7 @@ Or here's one of the topics we can explore:"""
         app.add_handler(CommandHandler("start", self.start_command))
         app.add_handler(CommandHandler("help", self.help_command))
         app.add_handler(CommandHandler("feedback", self.feedback_command))
+        app.add_handler(CommandHandler("clear", self.clear_command))  # ← ДОБАВЬТЕ ЭТУ СТРОКУ
         app.add_handler(CommandHandler("stats", self.stats_command))
         app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, self.handle_message))
         app.add_handler(CallbackQueryHandler(self.button_callback))
