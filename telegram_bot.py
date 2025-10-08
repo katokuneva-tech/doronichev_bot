@@ -151,7 +151,7 @@ Or here's one of the topics we can explore:"""
 Буду рад любой обратной связи!"""
         await update.message.reply_text(text)
     
-async def clear_command(self, update, context):
+    async def clear_command(self, update, context):
         user_id = update.effective_user.id
         if user_id in self.conversation_history:
             self.conversation_history[user_id] = []
