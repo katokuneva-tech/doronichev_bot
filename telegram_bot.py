@@ -74,7 +74,13 @@ class DoronichevBot:
 
             messages = [{"role": "system", "content": self.system_prompt}]
             if context:
-                messages.append({"role": "system", "content": f"Контекст: {context}"})
+                messages.append({"role": "system", "content": (
+                    "Ниже — фрагменты из твоих реальных интервью и постов. "
+                    "Опирайся на них: пересказывай своими словами, ссылайся на свой опыт. "
+                    "Если в контексте нет информации по вопросу — отвечай из общего опыта, "
+                    "но не выдумывай конкретные истории, которых не было.\n\n"
+                    f"{context}"
+                )})
             if first_name:
                 messages.append({"role": "system", "content": f"Имя собеседника: {first_name}"})
 
