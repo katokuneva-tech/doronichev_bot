@@ -1,18 +1,18 @@
 """
 Скрипт для очистки данных перед индексацией в RAG.
 1. Конвертирует RTF в plain text
-2. Прогоняет грязные субтитры через GPT для очистки
+2. Прогоняет грязные субтитры через Claude для очистки
 3. Сохраняет чистые файлы в data_clean/
 """
 
 import os
 import re
 import subprocess
-from openai import OpenAI
+import anthropic
 from dotenv import load_dotenv
 
 load_dotenv()
-client = OpenAI()
+client = anthropic.Anthropic()
 
 DATA_DIR = "./data"
 CLEAN_DIR = "./data_clean"
@@ -49,9 +49,22 @@ def is_rtf(filepath):
         return f.read(5) == '{\\rtf'
 
 
-def clean_subtitles_with_gpt(text, filename):
-    """Очищает субтитры через GPT: убирает мусор, восстанавливает пунктуацию."""
-    # Разбиваем на куски по ~8000 символов
+CLEAN_SYSTEM_PROMPT = (
+    "Ты получаешь фрагмент автоматических субтитров из YouTube-интервью. "
+    "Твоя задача:\n"
+    "1. Убрать мусор: [музыка], [аплодисменты], таймкоды, пометки\n"
+    "2. Восстановить пунктуацию и заглавные буквы\n"
+    "3. Убрать слова-паразиты (эм, ну, типа, вот) если они не несут смысла\n"
+    "4. Исправить очевидные ошибки распознавания речи\n"
+    "5. Разбить на абзацы по смыслу\n"
+    "6. Сохранить ВСЁ содержание — не сокращай, не пересказывай, не добавляй от себя\n"
+    "7. Если есть реплики разных спикеров — обозначь их (Интервьюер: / Андрей:)\n"
+    "Верни только очищенный текст, без комментариев."
+)
+
+
+def clean_subtitles_with_claude(text, filename):
+    """Очищает субтитры через Claude: убирает мусор, восстанавливает пунктуацию."""
     chunks = []
     for i in range(0, len(text), 8000):
         chunks.append(text[i:i+8000])
@@ -60,29 +73,15 @@ def clean_subtitles_with_gpt(text, filename):
     for i, chunk in enumerate(chunks):
         print(f"  Очистка части {i+1}/{len(chunks)}...")
         try:
-            response = client.chat.completions.create(
-                model="gpt-4.1-mini",
-                messages=[
-                    {"role": "system", "content": (
-                        "Ты получаешь фрагмент автоматических субтитров из YouTube-интервью. "
-                        "Твоя задача:\n"
-                        "1. Убрать мусор: [музыка], [аплодисменты], таймкоды, пометки\n"
-                        "2. Восстановить пунктуацию и заглавные буквы\n"
-                        "3. Убрать слова-паразиты (эм, ну, типа, вот) если они не несут смысла\n"
-                        "4. Исправить очевидные ошибки распознавания речи\n"
-                        "5. Разбить на абзацы по смыслу\n"
-                        "6. Сохранить ВСЁ содержание — не сокращай, не пересказывай, не добавляй от себя\n"
-                        "7. Если есть реплики разных спикеров — обозначь их (Интервьюер: / Андрей:)\n"
-                        "Верни только очищенный текст, без комментариев."
-                    )},
-                    {"role": "user", "content": chunk}
-                ],
+            response = client.messages.create(
+                model="claude-haiku-4-5-20251001",
                 max_tokens=10000,
-                temperature=0.1
+                system=CLEAN_SYSTEM_PROMPT,
+                messages=[{"role": "user", "content": chunk}]
             )
-            cleaned_parts.append(response.choices[0].message.content)
+            cleaned_parts.append(response.content[0].text)
         except Exception as e:
-            print(f"  Ошибка GPT: {e}, оставляю как есть")
+            print(f"  Ошибка Claude: {e}, оставляю как есть")
             cleaned_parts.append(chunk)
 
     return "\n\n".join(cleaned_parts)
@@ -129,10 +128,10 @@ def main():
             with open(filepath, 'r', encoding='utf-8') as f:
                 text = f.read()
 
-        # Проверяем, нужна ли GPT-очистка
+        # Проверяем, нужна ли очистка через Claude
         if is_dirty_subtitles(text):
-            print(f"  → Грязные субтитры ({len(text)} символов), очищаю через GPT...")
-            text = clean_subtitles_with_gpt(text, filename)
+            print(f"  → Грязные субтитры ({len(text)} символов), очищаю через Claude...")
+            text = clean_subtitles_with_claude(text, filename)
         else:
             print("  → Текст чистый, базовая очистка")
             text = basic_clean(text)
