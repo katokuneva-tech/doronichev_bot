@@ -258,8 +258,11 @@ Or pick a topic:"""
             except Exception as e:
                 logger.error(f"Ошибка отправки ответа админу: {e}")
 
-        await update.message.reply_text(response)
-    
+        try:
+            await update.message.reply_text(response, parse_mode="Markdown")
+        except Exception:
+            await update.message.reply_text(response)
+
     async def button_callback(self, update, context):
         """Обработка нажатий на кнопки с вопросами"""
         query = update.callback_query
@@ -295,8 +298,11 @@ Or pick a topic:"""
         context_info = self.search_knowledge_base(question)
 
         response = self.generate_response(question, context_info, user_id, first_name=first_name or None)
-        await query.message.reply_text(response)
-    
+        try:
+            await query.message.reply_text(response, parse_mode="Markdown")
+        except Exception:
+            await query.message.reply_text(response)
+
     def run_bot(self):
         app = Application.builder().token(self.telegram_token).build()
         
