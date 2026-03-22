@@ -118,25 +118,23 @@ class DoronichevBot:
         user_lang_code = update.effective_user.language_code or "ru"
         user_lang = "en" if user_lang_code.startswith("en") else "ru"
         
-        text_ru = """Круто, ты здесь. 
-Теперь дело за малым — задавай вопрос.
-Хочешь про продукт? Стартап? Команду? Или мотивацию?
-Я постараюсь объяснить так, как рассказал бы другу
+        first_name = update.effective_user.first_name or ""
 
-🌍 Этот бот мультиязычный — можно общаться на любом языке.
-🇺🇸 English | 🇷🇺 Русский | 🇪🇸 Español
+        text_ru = f"""Привет{', ' + first_name if first_name else ''}! Я Андрей Дороничев — 14 лет в Google, запускал мобильный YouTube, сейчас строю AI-стартап в биотехе.
 
-Или вот одна из тем, которую можем разогнать:"""
-        
-        text_en = """Great to see you here!
-Now the ball is in your court — ask away.
-Want to discuss products? Startups? Teams? Or motivation?
-I'll try to explain like I would to a friend
+Спрашивай о чём хочешь — продукты, стартапы, команды, мотивация, AI. Отвечу как другу за кофе, без воды и буллшита.
 
-🌍 This bot is multilingual — feel free to ask in any language.
-🇺🇸 English | 🇷🇺 Русский | 🇪🇸 Español 
+Можешь писать на любом языке 🌍
 
-Or here's one of the topics we can explore:"""
+Или ткни в тему:"""
+
+        text_en = f"""Hey{', ' + first_name if first_name else ''}! I'm Andrey Doronichev — 14 years at Google, built YouTube Mobile, now running an AI biotech startup.
+
+Ask me anything — products, startups, teams, motivation, AI. I'll answer like a friend over coffee, no BS.
+
+Feel free to write in any language 🌍
+
+Or pick a topic:"""
         
         text = text_ru if user_lang == "ru" else text_en
         
