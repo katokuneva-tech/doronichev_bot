@@ -1,11 +1,13 @@
 import os
+import re
+import time
 import logging
 import openai
 import chromadb
+from collections import defaultdict
 from suggested_questions import get_random_questions
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from dotenv import load_dotenv
-from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler
 import config
 from analytics import BotAnalytics
@@ -19,21 +21,37 @@ class DoronichevBot:
     def __init__(self):
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.telegram_token = os.getenv("TELEGRAM_BOT_TOKEN")
-        
-        openai.api_key = self.openai_api_key
-        self.openai_client = openai.OpenAI()
-        
+
+        if not self.openai_api_key:
+            raise ValueError("OPENAI_API_KEY не задан. Установи переменную окружения.")
+        if not self.telegram_token:
+            raise ValueError("TELEGRAM_BOT_TOKEN не задан. Установи переменную окружения.")
+
+        self.openai_client = openai.OpenAI(api_key=self.openai_api_key)
+
         self.chroma_client = chromadb.PersistentClient(path=config.VECTOR_DB_PATH)
         self.collection = self.chroma_client.get_collection(config.COLLECTION_NAME)
         logger.info(f"База готова: {self.collection.count()} чанков")
-        
+
         with open(config.SYSTEM_PROMPT_FILE, 'r', encoding='utf-8') as f:
             self.system_prompt = f.read()
-        
+
         self.conversation_history = {}
-        
+        self._rate_limits = defaultdict(list)
+
         if config.ENABLE_ANALYTICS:
             self.analytics = BotAnalytics()
+
+    def _is_rate_limited(self, user_id):
+        """Проверка rate limit для пользователя."""
+        now = time.time()
+        timestamps = self._rate_limits[user_id]
+        # Убираем старые записи
+        self._rate_limits[user_id] = [t for t in timestamps if now - t < config.RATE_LIMIT_WINDOW]
+        if len(self._rate_limits[user_id]) >= config.RATE_LIMIT_MESSAGES:
+            return True
+        self._rate_limits[user_id].append(now)
+        return False
     
     def search_knowledge_base(self, query):
         try:
@@ -50,16 +68,15 @@ class DoronichevBot:
             logger.error(f"Ошибка поиска: {e}")
             return ""
     
-    def generate_response(self, user_message, context, user_id):
+    def generate_response(self, user_message, context, user_id, first_name=None):
         try:
             history = self.conversation_history.get(user_id, [])
-            
+
             messages = [{"role": "system", "content": self.system_prompt}]
             if context:
                 messages.append({"role": "system", "content": f"Контекст: {context}"})
-            
-            if 'gender_hint' in locals():
-                messages.append({"role": "system", "content": f"Вероятный пол собеседника (не точно): {gender_hint}"})
+            if first_name:
+                messages.append({"role": "system", "content": f"Имя собеседника: {first_name}"})
 
             for msg in history[-config.HISTORY_CONTEXT_MESSAGES:]:
                 messages.append(msg)
@@ -161,7 +178,7 @@ Or here's one of the topics we can explore:"""
     async def stats_command(self, update, context):
         user_id = update.effective_user.id
         
-        if config.ADMIN_USER_ID and user_id != config.ADMIN_USER_ID:
+        if not config.ADMIN_USER_ID or user_id != config.ADMIN_USER_ID:
             await update.message.reply_text("Эта команда доступна только администратору.")
             return
         
@@ -185,15 +202,24 @@ Or here's one of the topics we can explore:"""
         
         await update.message.reply_text(text)
     
+    def _is_forbidden_topic(self, text):
+        """Проверка на запрещённые темы с учётом границ слов."""
+        text_lower = text.lower()
+        for word in config.FORBIDDEN_TOPICS:
+            if re.search(rf'\b{re.escape(word)}\b', text_lower):
+                return True
+        return False
+
     async def handle_message(self, update, context):
         user_message = update.message.text
         user_id = update.effective_user.id
         username = update.effective_user.username or "без username"
         first_name = update.effective_user.first_name or ""
-    
-        # Передаём только имя, GPT сам определит род
-        user_info = f"Имя собеседника: {first_name}" if first_name else None   
-        
+
+        if self._is_rate_limited(user_id):
+            await update.message.reply_text("Подожди немного, слишком много сообщений подряд.")
+            return
+
         # Отправляем уведомление админу
         admin_chat_id = os.getenv("ADMIN_CHAT_ID")
         if admin_chat_id:
@@ -204,20 +230,20 @@ Or here's one of the topics we can explore:"""
                 )
             except Exception as e:
                 logger.error(f"Ошибка отправки админу: {e}")
-        
+
         if config.ENABLE_ANALYTICS:
             self.analytics.log_message(user_id, user_message)
-        
-        if any(word in user_message.lower() for word in config.FORBIDDEN_TOPICS):
+
+        if self._is_forbidden_topic(user_message):
             await update.message.reply_text("Ну смотри, я больше про продукты и стартапы. Давай поговорим о чем-то полезном!")
             return
-        
+
         await context.bot.send_chat_action(chat_id=update.effective_chat.id, action="typing")
-        
+
         context_info = self.search_knowledge_base(user_message)
-        
-        response = self.generate_response(user_message, context_info, user_id)
-        
+
+        response = self.generate_response(user_message, context_info, user_id, first_name=first_name or None)
+
         # Отправляем ответ админу
         if admin_chat_id:
             try:
@@ -227,7 +253,7 @@ Or here's one of the topics we can explore:"""
                 )
             except Exception as e:
                 logger.error(f"Ошибка отправки ответа админу: {e}")
-        
+
         await update.message.reply_text(response)
     
     async def button_callback(self, update, context):
@@ -253,21 +279,18 @@ Or here's one of the topics we can explore:"""
     
         # Берём ПОЛНЫЙ вопрос, а не тизер
         question = questions[question_index]["full"]
-    
+
         user_id = query.from_user.id
         first_name = query.from_user.first_name or ""
-    
-        # Передаём только имя, без явного определения пола
-        user_info = f"Имя собеседника: {first_name}" if first_name else None
-    
+
         if config.ENABLE_ANALYTICS:
             self.analytics.log_message(user_id, question)
-    
+
         await context.bot.send_chat_action(chat_id=query.message.chat_id, action="typing")
-    
+
         context_info = self.search_knowledge_base(question)
-    
-        response = self.generate_response(question, context_info, user_id)
+
+        response = self.generate_response(question, context_info, user_id, first_name=first_name or None)
         await query.message.reply_text(response)
     
     def run_bot(self):
@@ -276,7 +299,7 @@ Or here's one of the topics we can explore:"""
         app.add_handler(CommandHandler("start", self.start_command))
         app.add_handler(CommandHandler("help", self.help_command))
         app.add_handler(CommandHandler("feedback", self.feedback_command))
-        app.add_handler(CommandHandler("clear", self.clear_command))  # ← ДОБАВЬТЕ ЭТУ СТРОКУ
+        app.add_handler(CommandHandler("clear", self.clear_command))
         app.add_handler(CommandHandler("stats", self.stats_command))
         app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, self.handle_message))
         app.add_handler(CallbackQueryHandler(self.button_callback))

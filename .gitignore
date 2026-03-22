@@ -5,3 +5,5 @@ __pycache__/
 *.db
 .DS_Store
 credentials.json
+bot_analytics.json
+conversations.jsonl
