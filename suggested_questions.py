@@ -2,70 +2,70 @@ import random
 
 QUESTIONS_RU = [
     {
-        "teaser": "Антихрупкие навыки",
-        "full": "Какие навыки останутся антихрупкими в ближайшие 10 лет — и как их тренировать еженедельно?"
+        "teaser": "Чему учиться, чтобы AI не сожрал",
+        "full": "Какие навыки останутся ценными в ближайшие 10 лет, когда AI умеет почти всё — и как их тренировать?"
     },
     {
-        "teaser": "Твоя первая AI-команда",
-        "full": "Если человек — менеджер виртуальных сотрудников, какие три роли нанять первыми и по каким метрикам их оценивать?"
+        "teaser": "AI вместо сотрудников — реально?",
+        "full": "Можно ли уже сейчас заменить часть команды AI-сотрудниками? Какие роли первыми и как оценивать результат?"
     },
     {
-        "teaser": "Permission to dare",
-        "full": "Как воспитывать в себе permission to dare — внутреннее право хотеть большего — и какие маркеры указывают, что оно ослабло?"
+        "teaser": "Почему ты боишься хотеть большего",
+        "full": "Как воспитывать в себе внутреннее право хотеть большего и перестать занижать планку?"
     },
     {
-        "teaser": "Оптимизм vs самообман",
-        "full": "Где для тебя проходит граница между стратегическим оптимизмом и самообманом?"
+        "teaser": "Ты оптимист или врёшь себе?",
+        "full": "Где проходит граница между стратегическим оптимизмом и самообманом?"
     },
     {
-        "teaser": "Непаханые ниши",
-        "full": "В каких сферах сегодня «непаханая целина» для малых команд с ИИ и почему крупные игроки туда не дойдут?"
+        "teaser": "Где маленькая команда порвёт корпорацию",
+        "full": "В каких сферах сегодня малая команда с AI может обойти крупных игроков и почему те туда не дойдут?"
     },
     {
-        "teaser": "Отмазки vs ограничения",
-        "full": "Где ты прячешься за «отмазками», а где real constraint?"
+        "teaser": "Отмазки или реальные проблемы?",
+        "full": "Как отличить реальные ограничения от отмазок, за которыми ты прячешься?"
     },
     {
-        "teaser": "Must-have продукта",
+        "teaser": "Как понять, что продукт нужен",
         "full": "Как найти и проверить must-have в своём продукте до запуска?"
     },
     {
-        "teaser": "От идеи до первых клиентов",
+        "teaser": "Первые деньги за 30 дней",
         "full": "Как пройти путь от идеи до первых платящих пользователей за 30 дней?"
     }
 ]
 
 QUESTIONS_EN = [
     {
-        "teaser": "Antifragile skills",
-        "full": "What skills will remain antifragile in the next 10 years — and how to train them weekly?"
+        "teaser": "What to learn before AI eats your job",
+        "full": "What skills will remain valuable in the next 10 years when AI can do almost everything — and how to train them?"
     },
     {
-        "teaser": "Your first AI team",
-        "full": "If you're a manager of virtual employees, which three roles to hire first and what metrics to evaluate them by?"
+        "teaser": "AI replacing employees — real?",
+        "full": "Can you already replace part of your team with AI employees? Which roles first and how to measure results?"
     },
     {
-        "teaser": "Permission to dare",
-        "full": "How to cultivate permission to dare — the internal right to want more — and what markers indicate it has weakened?"
+        "teaser": "Why you're afraid to want more",
+        "full": "How to cultivate the internal right to want more and stop lowering the bar for yourself?"
     },
     {
-        "teaser": "Optimism vs self-deception",
+        "teaser": "Optimist or lying to yourself?",
         "full": "Where do you draw the line between strategic optimism and self-deception?"
     },
     {
-        "teaser": "Untapped niches",
-        "full": "What areas are 'virgin territory' today for small teams with AI and why won't big players reach them?"
+        "teaser": "Where small teams beat corporations",
+        "full": "What areas can a small team with AI outcompete big players in, and why won't they get there?"
     },
     {
-        "teaser": "Excuses vs constraints",
-        "full": "Where are you hiding behind 'excuses' and where are real constraints?"
+        "teaser": "Excuses or real problems?",
+        "full": "How to tell real constraints from excuses you're hiding behind?"
     },
     {
-        "teaser": "Product must-have",
+        "teaser": "How to know your product is needed",
         "full": "How to find and validate must-have in your product before launch?"
     },
     {
-        "teaser": "Idea to first customers",
+        "teaser": "First revenue in 30 days",
         "full": "How to go from idea to first paying users in 30 days?"
     }
 ]
