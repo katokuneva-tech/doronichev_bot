@@ -228,11 +228,29 @@ class DoronichevRAGPreparation:
 
 def main():
     """Основная функция для запуска обработки"""
+    import sys
+
+    # Флаг --rebuild для пересоздания коллекции с нуля
+    rebuild = "--rebuild" in sys.argv
+
     # Создаем экземпляр класса
     rag_prep = DoronichevRAGPreparation()
-    
-    # Указываем путь к папке с txt файлами
-    data_directory = "./data"  # Измени на путь к твоей папке
+
+    if rebuild:
+        print("🗑️  Удаляю старую коллекцию...")
+        try:
+            rag_prep.chroma_client.delete_collection("doronichev_knowledge")
+            rag_prep.collection = rag_prep.chroma_client.create_collection(
+                name="doronichev_knowledge",
+                metadata={"description": "Knowledge base from Andrey Doronichev interviews and content"}
+            )
+            print("✅ Коллекция пересоздана")
+        except Exception as e:
+            print(f"Ошибка: {e}")
+
+    # Используем очищенные данные если есть, иначе оригинальные
+    data_directory = "./data_clean" if os.path.exists("./data_clean") else "./data"
+    print(f"Используем данные из: {data_directory}")
     
     # Проверяем существование директории
     if not os.path.exists(data_directory):

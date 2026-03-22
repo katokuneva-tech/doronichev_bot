@@ -7,3 +7,4 @@ __pycache__/
 credentials.json
 bot_analytics.json
 conversations.jsonl
+data_clean/
