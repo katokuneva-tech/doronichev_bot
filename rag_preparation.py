@@ -8,7 +8,7 @@ from datetime import datetime
 from typing import List, Dict
 import openai
 import chromadb
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
 
 # Загрузка переменных окружения
